@@ -1,5 +1,5 @@
 function toCamelCase(str) {
-    const regExp = /\*|-|_|\$/g;
+    const regExp = /-|_/g;
     let res="";
     for (let i = 0; i < str.length; i++) {
         if (str[i] === '_' || str[i] === '-') {
